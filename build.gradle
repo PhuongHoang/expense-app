@@ -1,6 +1,14 @@
 allprojects {
     repositories {
-        mavenCentral()
+        jcenter()
+    }
+
+    apply plugin: 'java'
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok'
+        runtimeOnly 'org.postgresql:postgresql'
+        annotationProcessor 'org.projectlombok:lombok'
     }
 }
 
