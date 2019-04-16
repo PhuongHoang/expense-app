@@ -42,8 +42,8 @@ public class DataLoaderApplication {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-      csvController.loadCsv(Paths.get("/home/phuonghoang/projects/personal/data-loader/test_data.csv"), CsvType.CAPITAL_ONE_FORMAT);
-      csvController.loadCsv(Paths.get("/home/phuonghoang/projects/personal/data-loader/rbc_transactions.csv"), CsvType.RBC_FORMAT);
+      csvController.loadCsv(Paths.get("test_data.csv"), CsvType.CAPITAL_ONE_FORMAT);
+      csvController.loadCsv(Paths.get("rbc_transactions.csv"), CsvType.RBC_FORMAT);
       System.out.println("Got the task running");
     }
   }
