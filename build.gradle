@@ -1,9 +1,14 @@
+plugins {
+    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
+}
+
 allprojects {
     repositories {
         jcenter()
     }
 
     apply plugin: 'java'
+    apply plugin: 'io.spring.dependency-management'
 
     dependencies {
         compileOnly 'org.projectlombok:lombok'
@@ -14,4 +19,12 @@ allprojects {
 
 subprojects {
     version = '1.0'
+}
+
+configure(subprojects.findAll { it.name == 'data-loader' || it.name == 'expense-tracker' }) {
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR1"
+        }
+    }
 }
