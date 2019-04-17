@@ -3,8 +3,10 @@ This project serves as a learning ground for me. I am trying to get myself famil
 
 1. Gradle: especially the multi-project feature
 2. Spring Data
-3. Spring REST Data
+3. Spring Data REST 
 4. Spring Vault to use with [HashiCorp Vault](https://www.vaultproject.io/)
+5. Spring Cloud Config
+6. JUnit 5 with Spring 
 
 Another goal is to learn React as the same time. However, this is  stretch goal. 
 
@@ -25,4 +27,8 @@ This is a very well known Spring project. It is necessary for me to know about i
  
   :ballot_box_with_check: Setup entity and repositories classes
   
-  :black_square_button: Verified that the data can be saved/retrieved from PostgreSQL database 
+  :black_square_button: Verified that the data can be saved/retrieved from PostgreSQL database
+  
+#### Setup REST endpoint with Spring Data REST
+Spring Data REST generates REST endpoints for `@Repository` classes automatically. This saves from having to write `@RestController` classes by hand.
+ 
