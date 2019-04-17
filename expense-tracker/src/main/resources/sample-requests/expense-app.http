@@ -1,0 +1,6 @@
+GET http://{{host}}/api
+Accept: application/json; charset=utf-8
+Cache-Control: no-cache
+Accept-Encoding: gzip, deflate
+
+###
