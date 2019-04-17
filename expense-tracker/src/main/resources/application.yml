@@ -1,4 +1,7 @@
 spring:
+  data:
+    rest:
+      basePath: /api
   jpa:
     properties:
       hibernate:
@@ -10,7 +13,7 @@ spring:
       ddl-auto: update
     show-sql: true
   application:
-    name: expense-loader
+    name: expense-tracker
   datasource:
     url: ${CM_postgres_url:jdbc:postgresql://localhost:5432/springbootdb}
     username: ${CM_postgres_user:springboot}
