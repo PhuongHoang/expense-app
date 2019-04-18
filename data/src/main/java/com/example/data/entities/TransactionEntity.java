@@ -13,12 +13,8 @@ import lombok.Setter;
 @Data
 @NoArgsConstructor
 @Entity
-public class TransactionEntity {
+public class TransactionEntity extends EntityWithUUID {
 
-  @Setter(AccessLevel.PRIVATE)
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
   private String name;
   @OneToOne
   private TransactionCategory defaultCategory;

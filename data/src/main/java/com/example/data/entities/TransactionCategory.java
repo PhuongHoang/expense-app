@@ -14,12 +14,8 @@ import org.springframework.lang.Nullable;
 @Data
 @NoArgsConstructor
 @Entity
-public class TransactionCategory {
+public class TransactionCategory extends EntityWithUUID {
 
-  @Setter(AccessLevel.PRIVATE)
-  @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  private Long id;
   @Nullable
   @OneToOne
   private TransactionCategory parentCategory;
