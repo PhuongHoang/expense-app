@@ -13,10 +13,10 @@ spring:
             # Work around for https://github.com/pgjdbc/pgjdbc/issues/1102
             non_contextual_creation: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
   application:
-    name: expense-loader
+    name: data-loader
   datasource:
     url: ${CM_postgres_url:jdbc:postgresql://localhost:5432/springbootdb}
     username: ${CM_postgres_user:springboot}

@@ -1,7 +1,4 @@
 spring:
-  data:
-    rest:
-      basePath: /api
   jpa:
     properties:
       hibernate:
@@ -10,8 +7,11 @@ spring:
             # Work around for https://github.com/pgjdbc/pgjdbc/issues/1102
             non_contextual_creation: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     show-sql: true
+  data:
+    rest:
+      basePath: /api
   application:
     name: expense-tracker
   datasource:
