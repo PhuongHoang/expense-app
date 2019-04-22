@@ -35,8 +35,13 @@ This is a very well known Spring project. It is necessary for me to know about i
  
   :ballot_box_with_check: Setup entity and repositories classes
   
-  :black_square_button: Verified that the data can be saved/retrieved from PostgreSQL database
+  :ballot_box_with_check: Setup a common data layer that other projects can use, based on this [instruction](https://stackoverflow.com/questions/55728878/scan-repositories-in-another-package)
+  
+  :ballot_box_with_check: Verified that the data can be saved/retrieved from PostgreSQL database
   
 #### Setup REST endpoint with Spring Data REST
 Spring Data REST generates REST endpoints for `@Repository` classes automatically. This saves from having to write `@RestController` classes by hand.
- 
+
+  :ballot_box_with_check: Setup the endpoints for all the available repositories
+  
+  :black_square_button: Configure the JSON response 
