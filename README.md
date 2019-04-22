@@ -1,12 +1,20 @@
 # Expense tracking application
 This project serves as a learning ground for me. I am trying to get myself familiar with the following technologies:
 
+## Goals
 1. Gradle: especially the multi-project feature
 2. Spring Data
 3. Spring Data REST 
-4. Spring Vault to use with [HashiCorp Vault](https://www.vaultproject.io/)
-5. Spring Cloud Config
-6. JUnit 5 with Spring 
+4. [React](https://reactjs.org/) for Spring Boot project, link [here](https://developer.okta.com/blog/2018/07/19/simple-crud-react-and-spring-boot) 
+5. JUnit 5 with Spring
+6. [Spring Security](https://spring.io/projects/spring-security#learn) with [OAuth support](https://spring.io/projects/spring-security-oauth)
+
+## Stretch goals
+These are goals that I would like to achieve. However, they are deemed nice-to-have goals as they do not contribute to my learning for the time being.
+
+1. Setup and use [HashiCorp Vault](https://www.vaultproject.io/) in my project, with the help of [Spring Vault](https://docs.spring.io/spring-vault/docs/current/reference/html/index.html)
+2. Setup [Spring Cloud Config](https://cloud.spring.io/spring-cloud-static/spring-cloud-config/2.1.0.RELEASE/single/spring-cloud-config.html) so that all my projects get the configuration from a common place. This is very useful for my integration-api project at work as well.
+3. [Spring Rest Docs](https://spring.io/projects/spring-restdocs) to document my REST APIs
 
 Another goal is to learn React as the same time. However, this is  stretch goal. 
 
@@ -40,6 +48,8 @@ This is a very well known Spring project. It is necessary for me to know about i
   :ballot_box_with_check: Setup a common data layer that other projects can use, based on this [instruction](https://stackoverflow.com/questions/55728878/scan-repositories-in-another-package)
   
   :ballot_box_with_check: Verified that the data can be saved/retrieved from PostgreSQL database
+  
+  :black_square_button: Audit entity classes to make sure they follow good practice for JPA
 
 #### Setup Flyway
 This is a tool to manage different versions of the database migration script. This is very useful to ensure that the code that you work with is applicable to the database schema.
