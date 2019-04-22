@@ -13,6 +13,14 @@ Another goal is to learn React as the same time. However, this is  stretch goal.
 ## Progress
 So far, I have got the following working
 
+  :ballot_box_with_check: Having a springbootdb database 
+  
+  :ballot_box_with_check: Setup [uuid-ossp](https://www.postgresql.org/docs/current/uuid-ossp.html) extension which allows UUID to be generated, based on this [instruction](https://www.postgresql.org/message-id/C5EBF511-835E-4F24-A4E4-6CC0119F48E4@me.com)
+  
+  :ballot_box_with_check: Verifying it works with the app
+  
+  :black_square_button: Setup correct index for the tables
+  
 #### Setup Gradle for my project
 Gradle is my company official build tool. It makes sense that I should at least be familiar with it.
 
