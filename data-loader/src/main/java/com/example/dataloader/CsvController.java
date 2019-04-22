@@ -29,7 +29,7 @@ public class CsvController {
         capitalOneService.loadCsv(csvPath);
         break;
       default:
-        throw new IllegalArgumentException("Unhandled type");
+        throw new IllegalArgumentException("Unhandled categoryType");
     }
   }
 

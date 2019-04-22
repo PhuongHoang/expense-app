@@ -1,15 +1,8 @@
 package com.example.dataloader;
 
+import com.example.data.NoOpClass;
 import com.example.dataloader.CsvController.CsvType;
-import com.example.dataloader.dto.CapitalOneTransactionDto;
-import com.example.dataloader.dto.RoyalBankTransactionDto;
-import com.fasterxml.jackson.databind.MappingIterator;
-import com.fasterxml.jackson.dataformat.csv.CsvMapper;
-import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import java.io.BufferedReader;
-import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -19,7 +12,7 @@ import org.springframework.cloud.task.configuration.EnableTask;
 import org.springframework.context.annotation.Bean;
 
 @EnableTask
-@SpringBootApplication
+@SpringBootApplication(scanBasePackageClasses = {NoOpClass.class, CsvController.class})
 public class DataLoaderApplication {
 
   public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package com.example.dataloader.service;
 
+import com.example.data.repositories.TransactionRepository;
 import com.example.dataloader.dto.RoyalBankTransactionDto;
 import com.example.dataloader.mappers.RoyalBankTransactionMapper;
 import com.fasterxml.jackson.databind.MappingIterator;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
+import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,12 +20,14 @@ public class RoyalBankService {
 
   private CsvMapper csvMapper;
   private RoyalBankTransactionMapper transactionMapper;
+  private TransactionRepository transactionRepository;
 
   @Autowired
   public RoyalBankService(CsvMapper csvMapper,
-      RoyalBankTransactionMapper transactionMapper) {
+      RoyalBankTransactionMapper transactionMapper, TransactionRepository transactionRepository) {
     this.csvMapper = csvMapper;
     this.transactionMapper = transactionMapper;
+    this.transactionRepository = transactionRepository;
   }
 
   public void loadCsv(Path csvFile) throws IOException {
@@ -35,9 +39,10 @@ public class RoyalBankService {
           .with(schema).readValues(reader);
       final List<RoyalBankTransactionDto> transactionDtoList = iterator.readAll();
       transactionDtoList.forEach(System.out::println);
-      System.out.println("Display Royal Bank transactions: DB entities");
-      transactionDtoList.parallelStream().map(transactionMapper::toTransaction)
-          .forEach(System.out::println);
+      System.out.println("Saving Royal Bank transactions");
+      transactionRepository.saveAll(
+          transactionDtoList.parallelStream().map(transactionMapper::toTransaction).collect(
+              Collectors.toList()));
     }
   }
 }
