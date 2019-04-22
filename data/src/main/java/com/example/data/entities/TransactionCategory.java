@@ -1,14 +1,10 @@
 package com.example.data.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import org.springframework.lang.Nullable;
 
 @Data
@@ -19,34 +15,15 @@ public class TransactionCategory extends EntityWithUUID {
   @Nullable
   @OneToOne
   private TransactionCategory parentCategory;
-  private Type type;
+  @Column(name = "category_type")
+  private String categoryType;
 
-  public TransactionCategory(@Nullable TransactionCategory parentCategory, Type type) {
+  public TransactionCategory(@Nullable TransactionCategory parentCategory, String categoryType) {
     this.parentCategory = parentCategory;
-    this.type = type;
+    this.categoryType = categoryType;
   }
 
-  public TransactionCategory(Type type) {
-    this.type = type;
-  }
-
-  public enum Type {
-    SALARY,
-    SAVING,
-    GROCERY,
-    DRUGS,
-    GAS,
-    INTERNET,
-    PHONE,
-    INSURANCE,
-    MORTGAGE,
-    WATER_PAYMENT,
-    HYDRO_PAYMENT,
-    HEATING,
-    SHOPPING,
-    DINING,
-    PARKING,
-    OTHER_SERVICES,
-    CREDIT_PAYMENT
+  public TransactionCategory(String categoryType) {
+    this.categoryType = categoryType;
   }
 }
