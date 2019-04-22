@@ -43,7 +43,7 @@ Gradle is my company official build tool. It makes sense that I should at least 
 #### Setup data access layer using Spring Data JPA
 This is a very well known Spring project. It is necessary for me to know about it. I don't have to know it inside out. However, I have to know enough to be able to use it effectively.   
  
-  :ballot_box_with_check: Setup entity and repositories classes
+  :ballot_box_with_check: Setup entity and repositories classes in [data project](data)
   
   :ballot_box_with_check: Setup a common data layer that other projects can use, based on this [instruction](https://stackoverflow.com/questions/55728878/scan-repositories-in-another-package)
   
@@ -63,6 +63,15 @@ This is a tool to manage different versions of the database migration script. Th
 #### Setup REST endpoint with Spring Data REST
 Spring Data REST generates REST endpoints for `@Repository` classes automatically. This saves from having to write `@RestController` classes by hand.
 
-  :ballot_box_with_check: Setup the endpoints for all the available repositories
+  :ballot_box_with_check: Setup the endpoints for all the available repositories in [expense-tracker](expense-tracker)
   
-  :black_square_button: Configure the JSON response so that it helps me to work with the response effectively. The current default JSON response (HAL based) is not very intuitive to work with. 
+  :black_square_button: Configure the JSON response so that it helps me to work with the response effectively. The current default JSON response (HAL based) is not very intuitive to work with.
+
+#### Setup React front end
+I need a front end for my application. React fits the bill nicely as it is very popular at the moment. For this, I will use this [tutorial](https://dzone.com/articles/integrating-java-and-npm-builds-using-gradle) as a guide.
+
+  :ballot_box_with_check: Create an empty react project, called [expense-ui](expense-ui) 
+  
+  :black_square_button: Configure the gradle build to build this project
+  
+  :black_square_button: Integrate with the [expense-tracker](expense-tracker) back end
