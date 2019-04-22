@@ -1,4 +1,4 @@
 rootProject.name = 'expense-app'
 
-include 'data', 'data-loader', 'expense-tracker'
+include 'data', 'data-loader', 'expense-tracker', 'expense-ui'
 
