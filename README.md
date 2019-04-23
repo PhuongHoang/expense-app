@@ -72,6 +72,6 @@ I need a front end for my application. React fits the bill nicely as it is very 
 
   :ballot_box_with_check: Create an empty react project, called [expense-ui](expense-ui) 
   
-  :black_square_button: Configure the gradle build to build this project
+  :ballot_box_with_check: Configure the gradle build to build this project
   
   :black_square_button: Integrate with the [expense-tracker](expense-tracker) back end
