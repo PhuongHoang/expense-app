@@ -75,3 +75,14 @@ I need a front end for my application. React fits the bill nicely as it is very 
   :ballot_box_with_check: Configure the gradle build to build this project
   
   :black_square_button: Integrate with the [expense-tracker](expense-tracker) back end
+  
+  :black_square_button: Testing with Jest framework
+  
+#### Setup testing
+Obviously I need to perform testing for my application
+
+  :black_square_button: Setup JUnit testing for [data](data)
+  
+  :black_square_button: Setup JUnit testing for [data-loader](data-loader)
+  
+  :black_square_button: Setup JUnit testing for [expense-tracker](expense-tracker)
