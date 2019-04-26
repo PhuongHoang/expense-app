@@ -86,3 +86,12 @@ Obviously I need to perform testing for my application
   :black_square_button: Setup JUnit testing for [data-loader](data-loader)
   
   :black_square_button: Setup JUnit testing for [expense-tracker](expense-tracker)
+  
+#### Containerize the applications
+I need to create Docker images for the following applications
+
+  :black_square_button: [data-loader](data-loader)
+  
+  :black_square_button: [expense-tracker](expense-tracker)
+  
+  :black_square_button: [expense-ui](expense-ui)
