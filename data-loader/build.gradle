@@ -20,6 +20,9 @@ dependencies {
     implementation project(':data')
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     annotationProcessor "com.google.code.findbugs:annotations:${findBugsVersion}"
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    implementation group: 'org.apache.poi', name: 'poi', version: '4.1.0'
+
 }
 compileJava {
     options.compilerArgs = [
