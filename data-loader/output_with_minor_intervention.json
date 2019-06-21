@@ -1,0 +1,919 @@
+{
+  "CABLENET COMMUNICATIONS SYSTEM LTD": [
+    {
+      "legalName": "CABLENET COMMUNICATIONS SYSTEM LTD",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Cyprus",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "CABLENET COMMUNICATIONS SYSTEM LTD",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Cyprus",
+      "territoryNotes": []
+    }
+  ],
+  "VIPnet d.o.o.": [
+    {
+      "legalName": "VIPnet d.o.o.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Croatia",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "VIPnet d.o.o.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Croatia",
+      "territoryNotes": []
+    }
+  ],
+  "Unitymedia": [
+    {
+      "legalName": "Unitymedia",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Germany",
+      "territoryNotes": []
+    }
+  ],
+  "P.C.V. S.A.": [
+    {
+      "legalName": "P.C.V. S.A.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Cyprus",
+      "territoryNotes": []
+    }
+  ],
+  "Virgin Media Limited": [
+    {
+      "legalName": "Virgin Media Limited",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:United Kingdom",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Virgin Media Limited",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:United Kingdom",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Virgin Media Limited",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:United Kingdom",
+      "territoryNotes": []
+    }
+  ],
+  "YOUSEE A/S": [
+    {
+      "legalName": "YOUSEE A/S",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Denmark",
+      "territoryNotes": []
+    }
+  ],
+  "Cable and Wireless Seychelles Ltd.": [
+    {
+      "legalName": "Cable and Wireless Seychelles Ltd.",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Seychelles",
+      "territoryNotes": []
+    }
+  ],
+  "Neo Fillms Production and Film Distribution (SEE- SVOD)": [
+    {
+      "legalName": "Neo Fillms Production and Film Distribution (SEE- SVOD)",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Cyprus",
+      "territoryNotes": []
+    }
+  ],
+  "Digital TV Cable Edmund S.R.L.": [
+    {
+      "legalName": "Digital TV Cable Edmund S.R.L.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Boliva",
+      "territoryNotes": []
+    }
+  ],
+  "All3Media International Limited (Multi-Territory - SVOD)": [
+    {
+      "legalName": "All3Media International Limited (Multi-Territory - SVOD)",
+      "territories": [
+        "AFRICA",
+        "LATIN AMERICA",
+        "MIDDLE EAST",
+        "NORTH AFRICA",
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Israel (incl Jerusalem, the West Bank, Gaza)",
+      "territoryNotes": []
+    }
+  ],
+  "SAWITA (SVOD/TVOD - AFRICA)": [
+    {
+      "legalName": "SAWITA (SVOD/TVOD - AFRICA)",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:South Africa",
+      "territoryNotes": []
+    }
+  ],
+  "ITV Global Entertainment  Limited": [
+    {
+      "legalName": "ITV Global Entertainment  Limited",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "ITV Global Entertainment  Limited",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "ITISSALAT AL-MAGHRIB": [
+    {
+      "legalName": "ITISSALAT AL-MAGHRIB",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Morocco",
+      "territoryNotes": []
+    }
+  ],
+  "VTR COMUNICACIONES SpA": [
+    {
+      "legalName": "VTR COMUNICACIONES SpA",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Chile",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "VTR COMUNICACIONES SpA",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Chile",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "VTR COMUNICACIONES SpA",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Chile",
+      "territoryNotes": []
+    }
+  ],
+  "MELITA p.l.c.": [
+    {
+      "legalName": "MELITA p.l.c.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Malta",
+      "territoryNotes": []
+    }
+  ],
+  "BFTV IL": [
+    {
+      "legalName": "BFTV IL",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "FreMantle Media (SVOD - Israel)": [
+    {
+      "legalName": "FreMantle Media (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "FreMantle Media (SVOD - Israel)",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Israel (incl Jerusalem, the West Bank, Gaza)",
+      "territoryNotes": []
+    }
+  ],
+  "Vodafone Panafon Hellenic Telecommunications Company S.A.": [
+    {
+      "legalName": "Vodafone Panafon Hellenic Telecommunications Company S.A.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Greece",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Vodafone Panafon Hellenic Telecommunications Company S.A.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Greece",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Vodafone Panafon Hellenic Telecommunications Company S.A.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Greece",
+      "territoryNotes": []
+    }
+  ],
+  "Cablevision S.A.": [
+    {
+      "legalName": "Cablevision S.A.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Argentina",
+      "territoryNotes": []
+    }
+  ],
+  "Stream Broadband Communications (Pty) Ltd": [
+    {
+      "legalName": "Stream Broadband Communications (Pty) Ltd",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:South Africa",
+      "territoryNotes": []
+    }
+  ],
+  "Tricom S.A": [
+    {
+      "legalName": "Tricom S.A",
+      "territories": [
+        "THE CARIBBEAN"
+      ],
+      "applicableCountries": "CARIB:Dominican Republic",
+      "territoryNotes": []
+    }
+  ],
+  "Algar Telecom S/A": [
+    {
+      "legalName": "Algar Telecom S/A",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    }
+  ],
+  "The Walt Disney Company Limited (Israel - EST/TVOD)": [
+    {
+      "legalName": "The Walt Disney Company Limited (Israel - EST/TVOD)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "Solo Phone Holding Company": [
+    {
+      "legalName": "Solo Phone Holding Company",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Nigeria",
+      "territoryNotes": []
+    }
+  ],
+  "Riselco S.A.": [
+    {
+      "legalName": "Riselco S.A.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Uruguay",
+      "territoryNotes": []
+    }
+  ],
+  "Monte Cablevideo S.A.": [
+    {
+      "legalName": "Monte Cablevideo S.A.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Uruguay",
+      "territoryNotes": []
+    }
+  ],
+  "PrimeTel PLC": [
+    {
+      "legalName": "PrimeTel PLC",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Cyprus",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "PrimeTel PLC",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Cyprus",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "PrimeTel PLC",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Cyprus",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "PrimeTel PLC",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Cyprus",
+      "territoryNotes": []
+    }
+  ],
+  "The Walt Disney Company Limited (Greece - VOD)": [
+    {
+      "legalName": "The Walt Disney Company Limited (Greece - VOD)",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Cyprus, SEE:Malta",
+      "territoryNotes": []
+    }
+  ],
+  "The Hellenic Telecommunications Organisation S.A.": [
+    {
+      "legalName": "The Hellenic Telecommunications Organisation S.A.",
+      "territories": [
+        ""
+      ],
+      "applicableCountries": "EUR:Greece",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "The Hellenic Telecommunications Organisation S.A.",
+      "territories": [
+        ""
+      ],
+      "applicableCountries": "EUR:Greece",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "The Hellenic Telecommunications Organisation S.A.",
+      "territories": [
+        ""
+      ],
+      "applicableCountries": "EUR:Greece",
+      "territoryNotes": []
+    }
+  ],
+  "TELEKOM SLOVENIJE, d.d.": [
+    {
+      "legalName": "TELEKOM SLOVENIJE, d.d.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Slovenia",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "TELEKOM SLOVENIJE, d.d.",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Slovenia",
+      "territoryNotes": []
+    }
+  ],
+  "Blue Finch Film Releasing Ltd": [
+    {
+      "legalName": "Blue Finch Film Releasing Ltd",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Ireland, EUR:United Kingdom",
+      "territoryNotes": []
+    }
+  ],
+  "Paramount (EST/TVOD-Israel)": [
+    {
+      "legalName": "Paramount (EST/TVOD-Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "Drive Media Rights Limited": [
+    {
+      "legalName": "Drive Media Rights Limited",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "Virginia Records": [
+    {
+      "legalName": "Virginia Records",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Bulgaria",
+      "territoryNotes": []
+    }
+  ],
+  "The Walt Disney Company Limited (Middle East - VOD)": [
+    {
+      "legalName": "The Walt Disney Company Limited (Middle East - VOD)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:United Arab Emirates",
+      "territoryNotes": []
+    }
+  ],
+  "Imagine Media Kids Limited (SVOD - Israel)": [
+    {
+      "legalName": "Imagine Media Kids Limited (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Imagine Media Kids Limited (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Imagine Media Kids Limited (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "CELL C PTY Limited": [
+    {
+      "legalName": "CELL C PTY Limited",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:South Africa",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "CELL C PTY Limited",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:South Africa",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "CELL C PTY Limited",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:South Africa",
+      "territoryNotes": []
+    }
+  ],
+  "HBO Enterprise - (Israel - SVOD)": [
+    {
+      "legalName": "HBO Enterprise - (Israel - SVOD)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "Telefonica Brasil S/A": [
+    {
+      "legalName": "Telefonica Brasil S/A",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Telefonica Brasil S/A",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    }
+  ],
+  "Amnet Cable Costa Rica, S.A": [
+    {
+      "legalName": "Amnet Cable Costa Rica, S.A",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Costa Rica",
+      "territoryNotes": []
+    }
+  ],
+  "Ooredoo": [
+    {
+      "legalName": "Ooredoo",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Qatar",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Ooredoo",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Qatar",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Ooredoo",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Qatar",
+      "territoryNotes": []
+    }
+  ],
+  "Telefonica TData S/A": [
+    {
+      "legalName": "Telefonica TData S/A",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    }
+  ],
+  "StudioCanal Limited (UK-EST)": [
+    {
+      "legalName": "StudioCanal Limited (UK-EST)",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Channel Islands",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "StudioCanal Limited (UK-EST)",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:Channel Islands",
+      "territoryNotes": []
+    }
+  ],
+  "MOOBOO TECH TECNOLOGIA E INOVACAO LIMITED": [
+    {
+      "legalName": "MOOBOO TECH TECNOLOGIA E INOVACAO LIMITED",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    }
+  ],
+  "Cable Onda": [
+    {
+      "legalName": "Cable Onda",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Panama",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Cable Onda",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Panama",
+      "territoryNotes": []
+    }
+  ],
+  "United Media Network AG": [
+    {
+      "legalName": "United Media Network AG",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Bosnia and Herzegovina, SEE:Serbia, SEE:Slovenia",
+      "territoryNotes": []
+    }
+  ],
+  "ESPN Sports Media Limited (Africa)": [
+    {
+      "legalName": "ESPN Sports Media Limited (Africa)",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Democratic Republic of the Congo, AFRICA:Lesotho, AFRICA:Mozambique, AFRICA:South Africa, AFRICA:Tanzania",
+      "territoryNotes": []
+    }
+  ],
+  "Colgems Productions Limited (Sony - Israel - EST/TVOD)": [
+    {
+      "legalName": "Colgems Productions Limited (Sony - Israel - EST/TVOD)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "OTT Chile S.A.": [
+    {
+      "legalName": "OTT Chile S.A.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Chile",
+      "territoryNotes": []
+    }
+  ],
+  "Broadband Home Limited": [
+    {
+      "legalName": "Broadband Home Limited",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Ghana",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Broadband Home Limited",
+      "territories": [
+        "AFRICA"
+      ],
+      "applicableCountries": "AFRICA:Ghana",
+      "territoryNotes": []
+    }
+  ],
+  "TALKTALK TELECOM LIMITED": [
+    {
+      "legalName": "TALKTALK TELECOM LIMITED",
+      "territories": [
+        "SOUTH EAST EUROPE",
+        "NORTH EAST EUROPE",
+        "SOUTH WEST EUROPE",
+        "NORTH WEST EUROPE",
+        "NORDICS"
+      ],
+      "applicableCountries": "EUR:United Kingdom",
+      "territoryNotes": []
+    }
+  ],
+  "Content Media Corporation - (SVOD - Israel)": [
+    {
+      "legalName": "Content Media Corporation - (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    },
+    {
+      "legalName": "Content Media Corporation - (SVOD - Israel)",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "The Walt Disney Company Limited (Greece - SVOD)": [
+    {
+      "legalName": "The Walt Disney Company Limited (Greece - SVOD)",
+      "territories": [
+        "SOUTH EAST EUROPE"
+      ],
+      "applicableCountries": "SEE:Greece",
+      "territoryNotes": []
+    }
+  ],
+  "Monkeywrench Films LLC": [
+    {
+      "legalName": "Monkeywrench Films LLC",
+      "territories": [
+        "AFRICA",
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ],
+  "TNL PCS. S./A.": [
+    {
+      "legalName": "TNL PCS. S./A.",
+      "territories": [
+        "LATIN AMERICA"
+      ],
+      "applicableCountries": "LATAM:Brazil",
+      "territoryNotes": []
+    }
+  ],
+  "Devilworks LTD": [
+    {
+      "legalName": "Devilworks LTD",
+      "territories": [
+        "CENTRAL ASIA",
+        "EAST ASIA",
+        "SOUTH ASIA",
+        "SOUTHEAST ASIA",
+        "NORTH ASIA"
+      ],
+      "applicableCountries": "ASIA:Israel",
+      "territoryNotes": []
+    }
+  ]
+}

@@ -38,6 +38,7 @@ public class DataLoaderApplication {
 //      csvController.loadCsv(Paths.get("test_data.csv"), CsvType.CAPITAL_ONE_FORMAT);
 //      csvController.loadCsv(Paths.get("rbc_transactions.csv"), CsvType.RBC_FORMAT);
       csvController.loadCsv(Paths.get("List_of_Countries_by_Region_21.05.csv"), CsvType.COUNTRY_FORMAT);
+      csvController.loadCsv(Paths.get("ServiceContractItem_UK_territories.csv"), CsvType.SERVICE_CONTRACT);
       System.out.println("Got the task running");
     }
   }

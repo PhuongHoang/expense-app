@@ -1,6 +1,10 @@
 package com.example.dataloader.service;
 
+import static java.nio.file.Files.newBufferedReader;
+
 import com.example.dataloader.dto.CountryDto;
+import com.example.dataloader.dto.ISOCountryDto;
+import com.example.dataloader.dto.RegionDto;
 import com.fasterxml.jackson.databind.MappingIterator;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
@@ -11,10 +15,12 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -26,121 +32,128 @@ public class CountryService {
   private CsvMapper csvMapper;
   private ObjectMapper objectMapper;
   private Map<String, String> countrNameToCountryCode;
+  private RegionCountryRegistry regionCountryRegistry;
 
   @Autowired
-  public CountryService(@Qualifier("csvMapper") CsvMapper csvMapper, @Qualifier("jsonMapper") ObjectMapper objectMapper)
+  public CountryService(@Qualifier("csvMapper") CsvMapper csvMapper,
+      @Qualifier("jsonMapper") ObjectMapper objectMapper, RegionCountryRegistry regionCountryRegistry)
       throws IOException {
     this.csvMapper = csvMapper;
     this.objectMapper = objectMapper;
     countrNameToCountryCode = loadCountryCodes();
+    this.regionCountryRegistry = regionCountryRegistry;
   }
 
   private Map<String, String> loadCountryCodes() throws IOException {
     final CsvSchema schema = CsvSchema.emptySchema().withHeader();
-    try (BufferedReader reader = Files.newBufferedReader(Paths.get("countrycode.csv"))) {
-      final MappingIterator<Country> iterator = csvMapper.readerFor(
-          Country.class).with(schema).readValues(reader);
-      final List<Country> countryDtoList = iterator.readAll();
+    try (BufferedReader reader = newBufferedReader(Paths.get("countrycode.csv"))) {
+      final MappingIterator<ISOCountryDto> iterator = csvMapper.readerFor(
+          ISOCountryDto.class).with(schema).readValues(reader);
+      final List<ISOCountryDto> countryDtoList = iterator.readAll();
       return countryDtoList.stream()
-          .collect(Collectors.toMap(Country::getCountryName, Country::getCountryCode));
+          .collect(Collectors.toMap(ISOCountryDto::getCountryName, ISOCountryDto::getCountryCode));
 
     }
   }
 
   public void loadCsv(Path csvFile) throws IOException {
     final CsvSchema schema = CsvSchema.emptySchema().withHeader();
-    System.out.println("Display Capital One transactions");
-    try (BufferedReader reader = Files.newBufferedReader(csvFile)) {
-
-      final MappingIterator<CountryDto> iterator = csvMapper.readerFor(
-          CountryDto.class).with(schema).readValues(reader);
+    try (BufferedReader reader = newBufferedReader(csvFile)) {
+      final MappingIterator<CountryDto> iterator = csvMapper.readerFor(CountryDto.class)
+          .with(schema).readValues(reader);
       final List<CountryDto> countryDtoList = iterator.readAll();
-      Map<String, List<Country>> results = new HashMap<>();
-      results.put("AFRICA", new ArrayList<>());
-      results.put("NORTH AMERICA", new ArrayList<>());
-      results.put("LATIN AMERICA", new ArrayList<>());
-      results.put("THE CARIBBEAN", new ArrayList<>());
-      results.put("SOUTH EAST EUROPE", new ArrayList<>());
-      results.put("NORTH EAST EUROPE", new ArrayList<>());
-      results.put("SOUTH WEST EUROPE", new ArrayList<>());
-      results.put("NORTH WEST EUROPE", new ArrayList<>());
-      results.put("NORDICS", new ArrayList<>());
-      results.put("MIDDLE EAST", new ArrayList<>());
-      results.put("OCEANIA", new ArrayList<>());
-      results.put("CENTRAL ASIA", new ArrayList<>());
-      results.put("EAST ASIA", new ArrayList<>());
-      results.put("SOUTH ASIA", new ArrayList<>());
-      results.put("SOUTHEAST ASIA", new ArrayList<>());
-      results.put("NORTH ASIA", new ArrayList<>());
+      final Map<String, Set<ISOCountryDto>> results = Arrays.stream(RegionDto.values())
+          .collect(Collectors.toMap(region -> region.getRegionName(), region -> new HashSet<>()));
       for (CountryDto country : countryDtoList) {
-        final String africa = country.getAfrica();
+        final String africa = country.getAfrica().trim();
         if (africa != null && !africa.isBlank()) {
-          results.get("AFRICA").add(new Country(getCountryCode(africa), africa));
+          results.get(RegionDto.AFRICA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(africa), africa));
         }
-        final String northAmerica = country.getNorthAmerica();
+        final String northAfrica = country.getNorthAfrica().trim();
+        if (northAfrica != null && !northAfrica.isBlank()) {
+          results.get(RegionDto.NORTH_AFRICA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(northAfrica), northAfrica));
+        }
+        final String northAmerica = country.getNorthAmerica().trim();
         if (northAmerica != null && !northAmerica.isBlank()) {
-          results.get("NORTH AMERICA").add(new Country(getCountryCode(northAmerica), northAmerica));
+          results.get(RegionDto.NORTH_AMERICA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(northAmerica), northAmerica));
         }
-        final String latinAmerica = country.getLatinAmerica();
+        final String latinAmerica = country.getLatinAmerica().trim();
         if (latinAmerica != null && !latinAmerica.isBlank()) {
-          results.get("LATIN AMERICA").add(new Country(getCountryCode(latinAmerica), latinAmerica));
+          results.get(RegionDto.LATIN_AMERICA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(latinAmerica), latinAmerica));
         }
-        final String theCaribbean = country.getTheCaribbean();
+        final String theCaribbean = country.getTheCaribbean().trim();
         if (theCaribbean != null && !theCaribbean.isBlank()) {
-          results.get("THE CARIBBEAN").add(new Country(getCountryCode(theCaribbean), theCaribbean));
+          results.get(RegionDto.THE_CARIBBEAN.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(theCaribbean), theCaribbean));
         }
-        final String southEastEurope = country.getSouthEastEurope();
+        final String southEastEurope = country.getSouthEastEurope().trim();
         if (southEastEurope != null && !southEastEurope.isBlank()) {
-          results.get("SOUTH EAST EUROPE").add(new Country(getCountryCode(southEastEurope), southEastEurope));
+          results.get(RegionDto.SOUTH_EAST_EUROPE.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(southEastEurope), southEastEurope));
         }
-        final String northEastEurope = country.getNorthEastEurope();
+        final String northEastEurope = country.getNorthEastEurope().trim();
         if (northEastEurope != null && !northEastEurope.isBlank()) {
-          results.get("NORTH EAST EUROPE").add(new Country(getCountryCode(northEastEurope), northEastEurope));
+          results.get(RegionDto.NORTH_EAST_EUROPE.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(northEastEurope), northEastEurope));
         }
-        final String southWestEurope = country.getSouthWestEurope();
+        final String southWestEurope = country.getSouthWestEurope().trim();
         if (southWestEurope != null && !southWestEurope.isBlank()) {
-          results.get("SOUTH WEST EUROPE").add(new Country(getCountryCode(southWestEurope), southWestEurope));
+          results.get(RegionDto.SOUTH_WEST_EUROPE.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(southWestEurope), southWestEurope));
         }
-        final String northWestEurope = country.getNorthWestEurope();
+        final String northWestEurope = country.getNorthWestEurope().trim();
         if (northWestEurope != null && !northWestEurope.isBlank()) {
-          results.get("NORTH WEST EUROPE").add(new Country(getCountryCode(northWestEurope), northWestEurope));
+          results.get(RegionDto.NORTH_WEST_EUROPE.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(northWestEurope), northWestEurope));
         }
-        final String nordics = country.getNordics();
+        final String nordics = country.getNordics().trim();
         if (nordics != null && !nordics.isBlank()) {
-          results.get("NORDICS").add(new Country(getCountryCode(nordics), nordics));
+          results.get(RegionDto.NORDICS.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(nordics), nordics));
         }
-        final String middleEast = country.getMiddleEast();
+        final String middleEast = country.getMiddleEast().trim();
         if (middleEast != null && !middleEast.isBlank()) {
-          results.get("MIDDLE EAST").add(new Country(getCountryCode(middleEast), middleEast));
+          results.get(RegionDto.MIDDLE_EAST.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(middleEast), middleEast));
         }
 
-        final String oceania = country.getOceania();
+        final String oceania = country.getOceania().trim();
         if (oceania != null && !oceania.isBlank()) {
-          results.get("OCEANIA").add(new Country(getCountryCode(oceania), oceania));
+          results.get(RegionDto.OCEANIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(oceania), oceania));
         }
-        final String centralAsia = country.getCentralAsia();
+        final String centralAsia = country.getCentralAsia().trim();
         if (centralAsia != null && !centralAsia.isBlank()) {
-          results.get("CENTRAL ASIA").add(new Country(getCountryCode(centralAsia), centralAsia));
+          results.get(RegionDto.CENTRAL_ASIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(centralAsia), centralAsia));
         }
-        final String eastAsia = country.getEastAsia();
+        final String eastAsia = country.getEastAsia().trim();
         if (eastAsia != null && !eastAsia.isBlank()) {
-          results.get("EAST ASIA").add(new Country(getCountryCode(eastAsia), eastAsia));
+          results.get(RegionDto.EAST_ASIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(eastAsia), eastAsia));
         }
-        final String southAsia = country.getSouthAsia();
+        final String southAsia = country.getSouthAsia().trim();
         if (southAsia != null && !southAsia.isBlank()) {
-          results.get("SOUTH ASIA").add(new Country(getCountryCode(southAsia), southAsia));
+          results.get(RegionDto.SOUTH_ASIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(southAsia), southAsia));
         }
-        final String southEastAsia = country.getSouthEastAsia();
+        final String southEastAsia = country.getSouthEastAsia().trim();
         if (southEastAsia != null && !southEastAsia.isBlank()) {
-          results.get("SOUTHEAST ASIA").add(new Country(getCountryCode(southEastAsia), southEastAsia));
+          results.get(RegionDto.SOUTH_EAST_ASIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(southEastAsia), southEastAsia));
         }
-        final String northAsia = country.getNorthAsia();
+        final String northAsia = country.getNorthAsia().trim();
         if (northAsia != null && !northAsia.isBlank()) {
-          results.get("NORTH ASIA").add(new Country(getCountryCode(northAsia), northAsia));
+          results.get(RegionDto.NORTH_ASIA.getRegionName())
+              .add(new ISOCountryDto(getCountryCode(northAsia), northAsia));
         }
       }
-      final String resultString = objectMapper.writeValueAsString(results);
-      System.out.println(resultString);
+      regionCountryRegistry.setRegionNameToCountryMap(results);
+      objectMapper.writeValue(Files.newBufferedWriter(Paths.get("country_codes.json")), results);
     }
   }
 

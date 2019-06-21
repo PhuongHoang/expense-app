@@ -1,6 +1,7 @@
 package com.example.dataloader;
 
 import com.example.dataloader.service.CapitalOneService;
+import com.example.dataloader.service.ContractService;
 import com.example.dataloader.service.CountryService;
 import com.example.dataloader.service.RoyalBankService;
 import java.io.IOException;
@@ -14,13 +15,15 @@ public class CsvController {
   private CapitalOneService capitalOneService;
   private RoyalBankService royalBankService;
   private CountryService countryService;
+  private ContractService contractService;
 
   @Autowired
-  public CsvController(CapitalOneService capitalOneService,
-      RoyalBankService royalBankService, CountryService countryService) {
+  public CsvController(CapitalOneService capitalOneService, RoyalBankService royalBankService,
+      CountryService countryService, ContractService contractService) {
     this.capitalOneService = capitalOneService;
     this.royalBankService = royalBankService;
     this.countryService = countryService;
+    this.contractService = contractService;
   }
 
   public void loadCsv(Path csvPath, CsvType csvType) throws IOException {
@@ -34,6 +37,9 @@ public class CsvController {
       case COUNTRY_FORMAT:
         countryService.loadCsv(csvPath);
         break;
+      case SERVICE_CONTRACT:
+        contractService.loadCsv(csvPath);
+        break;
       default:
         throw new IllegalArgumentException("Unhandled categoryType");
     }
@@ -42,6 +48,7 @@ public class CsvController {
   public enum CsvType {
     RBC_FORMAT,
     CAPITAL_ONE_FORMAT,
-    COUNTRY_FORMAT;
+    COUNTRY_FORMAT,
+    SERVICE_CONTRACT
   }
 }

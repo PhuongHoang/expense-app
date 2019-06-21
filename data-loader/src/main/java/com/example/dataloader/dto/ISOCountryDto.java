@@ -1,4 +1,4 @@
-package com.example.dataloader.service;
+package com.example.dataloader.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Country {
+public class ISOCountryDto {
 
   @JsonProperty(value = "Code")
   private String countryCode;

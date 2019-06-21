@@ -1,4 +1,18 @@
 Code,Name
+AN,Netherlands Antilles
+BL,Saint Barthelemy
+MF,Saint Martin
+VG,"Virgin Islands, British"
+VI,"Virgin Islands, U.S."
+BN,Brunei
+TL,Timor Lester
+VN,Vietnam
+CC,Cocos Islands
+MV,The Maldives
+GG,Sark
+XK,Kosovo
+MK,North Macedonia
+AX,Aland Islands
 AF,Afghanistan
 AX,Åland Islands
 AL,Albania
@@ -42,6 +56,7 @@ CA,Canada
 CV,Cabo Verde
 KY,Cayman Islands
 CF,Central African Republic
+CF,"Central African Republic (CAR)"
 TD,Chad
 CL,Chile
 CN,China
@@ -51,9 +66,12 @@ CO,Colombia
 KM,Comoros
 CG,Congo
 CD,Congo DR
+CG,"Congo, Republic of the"
+CD,"Congo, Democratic Republic of the"
 CK,Cook Islands
 CR,Costa Rica
-CI,Côte d'Ivoire
+CI,"Côte d'Ivoire"
+CI,"Cote d'Ivoire"
 HR,Croatia
 CU,Cuba
 CW,Curaçao
@@ -71,6 +89,7 @@ ER,Eritrea
 EE,Estonia
 ET,Ethiopia
 FK,Falkland Islands
+FK,"Falkland Islands (Malvinas)"
 FO,Faroe Islands
 FJ,Fiji
 FI,Finland
@@ -127,6 +146,7 @@ LI,Liechtenstein
 LT,Lithuania
 LU,Luxembourg
 MO,Macao
+MO,Macau
 MK,Macedonia
 MG,Madagascar
 MW,Malawi
@@ -212,6 +232,7 @@ SD,Sudan
 SR,Suriname
 SJ,Svalbard and Jan Mayen
 SZ,Swaziland
+SZ,"Eswatini (formerly Swaziland)"
 SE,Sweden
 CH,Switzerland
 SY,Syria
@@ -234,6 +255,7 @@ UA,Ukraine
 AE,United Arab Emirates
 GB,United Kingdom
 US,United States
+US,US
 UM,United States Minor Outlying Islands
 UY,Uruguay
 UZ,Uzbekistan
