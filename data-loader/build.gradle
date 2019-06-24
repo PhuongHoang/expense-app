@@ -1,14 +1,12 @@
 plugins {
-    id 'org.springframework.boot' version '2.1.3.RELEASE'
     id 'net.ltgt.apt' version '0.21'
 }
 
-apply plugin: 'io.spring.dependency-management'
 apply plugin: 'net.ltgt.apt-idea'
 
 ext {
     set('mapstructVersion', '1.3.0.Final')
-    set('findBugsVersion', '3.0.1')
+    set('springCloudVersion', "Greenwich.SR1")
 }
 
 dependencies {
@@ -19,11 +17,16 @@ dependencies {
     implementation "org.mapstruct:mapstruct:${mapstructVersion}"
     implementation project(':data')
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-    annotationProcessor "com.google.code.findbugs:annotations:${findBugsVersion}"
 }
 compileJava {
     options.compilerArgs = [
             // See http://mapstruct.org/documentation/dev/reference/html/#configuration-options
             '-Amapstruct.defaultComponentModel=spring'
     ]
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
