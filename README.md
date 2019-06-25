@@ -83,6 +83,8 @@ Obviously I need to perform testing for my application
 
   :black_square_button: Setup JUnit testing for [data](data)
   
+  :black_square_button: Integrate with [Test Containers](https://www.testcontainers.org/)
+  
   :black_square_button: Setup JUnit testing for [data-loader](data-loader)
   
   :black_square_button: Setup JUnit testing for [expense-tracker](expense-tracker)

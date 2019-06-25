@@ -1,5 +1,5 @@
 plugins {
-    id 'io.spring.dependency-management' version '1.0.7.RELEASE' apply false
+    id 'org.springframework.boot' version '2.1.6.RELEASE' apply false
 }
 
 subprojects {
@@ -30,7 +30,6 @@ configure(subprojects.findAll { it.name != 'expense-ui' }) {
 
     dependencies {
         compileOnly 'org.projectlombok:lombok'
-        runtimeOnly 'org.postgresql:postgresql'
         annotationProcessor 'org.projectlombok:lombok'
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             exclude group: 'junit', module: 'junit' //by both name and group
@@ -47,9 +46,10 @@ configure(subprojects.findAll { it.name != 'expense-ui' }) {
 }
 
 configure(subprojects.findAll { it.name == 'data-loader' || it.name == 'expense-tracker' }) {
-    dependencyManagement {
-        imports {
-            mavenBom "org.springframework.cloud:spring-cloud-dependencies:Greenwich.SR1"
-        }
+
+    apply plugin: 'org.springframework.boot'
+
+    dependencies {
+        runtimeOnly 'org.postgresql:postgresql'
     }
 }
